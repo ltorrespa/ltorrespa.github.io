@@ -1,38 +1,72 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import { meta } from "../consts";
-import ProfilePic from "src\assets\profile-pic.jpg";
+---
 
-<Layout title="Presentación | Laura Camila Torres" description="Mi video de presentación profesional">
-  <main class="max-w-3xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-bold mb-6">Presentación</h1>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentación | Laura Camila Torres Padilla</title>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col items-center py-12 px-4 selection:bg-indigo-500 selection:text-white">
     
-    <div class="space-y-6">
-      <p class="text-lg">
-        ¡Hola! Te doy la bienvenida a mi espacio de presentación profesional. Aquí puedes conocerme un poco más y ver mi video de introducción.
+    <div class="max-w-2xl w-full bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center">
+      
+      <!-- Foto de perfil -->
+      <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-indigo-500 mb-6 shadow-lg shadow-indigo-500/20">
+        <img src="/profile-pic.jpg" alt="Laura Camila Torres Padilla" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Nombre y Rol Principal -->
+      <h1 class="text-3xl font-extrabold tracking-tight mb-2">Laura Camila Torres Padilla</h1>
+      <p class="text-indigo-400 font-medium text-base mb-4">
+        Estudiante V Semestre de Ingeniería de Sistemas • Analista de Requerimientos
       </p>
 
-      <!-- Contenedor de la foto -->
-      <div class="flex justify-center my-6">
-        <div class="w-48 h-48 rounded-full overflow-hidden border-2 border-primary">
-          <Image src={ProfilePic} alt="Laura Camila Torres" class="w-full h-full object-cover" />
+      <!-- Descripción corta -->
+      <p class="text-slate-300 text-sm leading-relaxed mb-8 max-w-lg">
+        Apasionada por el desarrollo de software, el análisis de requerimientos y el modelado de procesos. Actualmente liderando la gestión de solicitudes y optimización de flujos de trabajo.
+      </p>
+
+      <!-- Sección de Experiencia Resumida -->
+      <div class="w-full text-left mb-6">
+        <h2 class="text-lg font-semibold text-white border-b border-slate-800 pb-2 mb-4">Experiencia Profesional</h2>
+        
+        <div class="space-y-4 text-sm">
+          <div>
+            <div class="flex justify-between font-medium text-slate-200">
+              <span>Analista de Requerimientos</span>
+              <span class="text-xs text-indigo-400 font-normal">2025 - Presente</span>
+            </div>
+            <p class="text-slate-400 text-xs">Controles Empresariales • Colombia</p>
+          </div>
+
+          <div>
+            <div class="flex justify-between font-medium text-slate-200">
+              <span>Analista de Requerimientos</span>
+              <span class="text-xs text-indigo-400 font-normal">2023 - 2025</span>
+            </div>
+            <p class="text-slate-400 text-xs">Periferia IT Group • Colombia</p>
+          </div>
+
+          <div>
+            <div class="flex justify-between font-medium text-slate-200">
+              <span>Tester Q.A</span>
+              <span class="text-xs text-indigo-400 font-normal">2022 - 2023</span>
+            </div>
+            <p class="text-slate-400 text-xs">Experis Manpower Group / DXC • Colombia</p>
+          </div>
         </div>
       </div>
 
-      <!-- Enlace o inserción del video -->
-      <div class="bg-card p-6 rounded-lg shadow-sm border border-border text-center space-y-4">
-        <h2 class="text-xl font-semibold">Video de Introducción</h2>
-        <p class="text-sm opacity-80">Haz clic en el siguiente enlace para ver mi video de presentación:</p>
-        
-        <a 
-          href="AQUÍ_VA_EL_ENLACE_DE_TU_VIDEO" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="inline-block bg-primary text-white px-6 py-2 rounded-md font-medium hover:opacity-90 transition"
-        >
-          Ver Video en YouTube / Drive
+      <!-- Botón de navegación -->
+      <div class="mt-4">
+        <a href="/" class="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/30">
+          Volver al Inicio
         </a>
       </div>
+
     </div>
-  </main>
-</Layout>
+
+  </body>
+</html>
