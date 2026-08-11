@@ -14,159 +14,88 @@ import LipiImage from "./assets/projects/lipi.svg";
 import ExchangeImage from "./assets/projects/exchange.svg";
 import PlaceholderImage from "./assets/projects/placeholder.svg";
 
-export const SITE_URL: string = "https://shonebinu.com";
+export const SITE_URL: string = "https://lauracamt.github.io";
 
 export const ENABLE_STARDUST_BG: boolean = false;
 
 export const meta = {
   about: {
     // index page
-    title: "Shone Binu",
+    title: "Laura Camila Torres",
     description:
-      "Hi, I'm Shone Binu, a software engineer. Welcome to my little corner of the internet!",
+      "Hola, soy Laura Camila Torres. Bienvenida/o a mi portafolio profesional.",
   },
   projects: {
-    title: "Projects | Shone Binu",
+    title: "Proyectos | Laura Camila Torres",
     description:
-      "Here are some of my projects — things I’ve built, experimented with, and had fun creating.",
+      "Aquí presento algunos de los proyectos y soluciones técnicas en las que he trabajado.",
   },
   blog: {
-    title: "Blog | Shone Binu",
+    title: "Blog | Laura Camila Torres",
     description:
-      "This is my blog — a place where I share thoughts, ideas, and things I’m learning along the way.",
+      "Un espacio donde comparto mis aprendizajes y reflexiones sobre ingeniería de sistemas y análisis de requerimientos.",
   },
   // blog post title and description are taken from the variables in markdown file
 };
 
-export const header: Header = { logoTitle: "SB" };
+export const header: Header = { logoTitle: "LC" };
 
 export const footer: Footer = {
   // parses html
   content:
-    "Made with ❤️ by Shone Binu • <a href='https://github.com/shonebinu/portfolio' class='link'>Source Code</a>",
+    "Hecho con ❤️ por Laura Camila Torres • <a href='https://github.com/LauraCamT' class='link'>GitHub</a>",
 };
 
 export const about: About = {
   // parses html
   headLine:
-    "Hi, I'm <span class='fancy-highlight font-black'>Shone Binu</span>",
-  tagLine: "Software Engineer / Full Stack Developer",
+    "Hola, Soy <span class='fancy-highlight font-black'>Laura Camila Torres</span>",
+  tagLine: "Analista de Requerimientos / Estudiante de Ingeniería de Sistemas",
   profilePic: ProfilePic,
   // parses html
   description:
-    "I’m a recent <u>Software Engineer</u> graduate from India 🇮🇳 who likes to keep tackling new problems. Currently, I’m working on the <u>React/Node.js</u> and <u>GTK</u> side of things. Outside of these, I work on improving myself in whatever I see fit.",
+    "Estudiante de 5.° semestre de <u>Ingeniería de Sistemas</u> y apasionada por transformar necesidades de negocio en soluciones claras. Actualmente me desempeño como <u>Analista de Requerimientos</u>, enfocada en el levantamiento, análisis y modelado de procesos, además de trabajar con especificaciones técnicas e historias de usuario para CRM COEM. Fuera del ámbito académico, busco constantemente aprender y mejorar en áreas que potencien mi perfil integral con el fin de aplicar el conocimiento en el ámbito laboral y crecer profesionalmente.",
   links: [
     // Lucide icons
-    { icon: "Github", href: "https://github.com/shonebinu/" },
-    { icon: "Linkedin", href: "https://www.linkedin.com/in/shonebinu/" },
-    { icon: "Youtube", href: "https://www.youtube.com/@shone_binu" },
+    { icon: "Github", href: "https://github.com/LauraCamT/" },
+    { icon: "Linkedin", href: "https://www.linkedin.com/" }, // Actualiza con tu URL
+    { icon: "Youtube", href: "https://www.youtube.com/" }, // Actualiza con tu URL
   ],
   resumeHref:
-    "https://drive.google.com/file/d/10dfGCIiX2b7Wf-Lj51ypt3UHgPiPQ3ZV/view?usp=sharing",
+    "#", // Coloca aquí el link a tu hoja de vida
   workExperience: [
     {
-      title: "Full Stack Developer Intern",
-      timeline: "May 2024 - Oct 2024",
-      company: "Rabbitsquare • India",
+      title: "Analista de Requerimientos",
+      timeline: "Actualidad",
+      company: "CRM COEM • Colombia",
       description:
-        "Developed a LAMP stack web solution for a Civil Service academy, including a customizable public website, management portal, user portal, and exam result publishing system.",
+        "Levantamiento, análisis y modelado de procesos, gestión de historias de usuario y especificaciones técnicas para CRM.",
     },
   ],
   education: [
     {
-      title: "Bachelor of Computer Application",
-      timeline: "Jun 2022 - Apr 2025",
-      institution: "Nirmala College Muvattupuzha • India",
+      title: "Ingeniería de Sistemas",
+      timeline: "5.° Semestre",
+      institution: "Universidad el Bosque • Colombia",
       description:
-        "Studied core computer science fundamentals including programming languages, data structures, algorithms, operating systems, and networking, with practical experience in Java, C/C++, JavaScript, PHP, and Linux.",
+        "Formación académica centrada en modelado de procesos, gestión de requisitos y fundamentos de ingeniería de software.",
     },
   ],
   // parses html
   getInTouch:
-    "Drop me an email at <a href='mailto:mail@shonebinu.com' class='primary-underline'>mail@shonebinu.com</a> or connect with me on one of my socials.",
+    "Si deseas contactarme, escríbeme a <a href='mailto:tu-correo@ejemplo.com' class='primary-underline'>tu-correo@ejemplo.com</a> o conectemos a través de mis redes sociales.",
 };
 
 export const projects: Project[] = [
-  {
-    logoImage: BriefImage,
-    title: "Brief",
-    techs: ["Python", "Gtk", "Linux", "Flatpak"],
-    description:
-      "Brief lets you browse community-maintained command line help pages. It uses tldr-pages as the data source.",
-    sourceHref: "https://github.com/shonebinu/Brief",
-    liveHref: "https://flathub.org/en/apps/io.github.shonebinu.Brief",
-  },
-  {
-    logoImage: LipiImage,
-    title: "Lipi",
-    techs: ["Python", "Gtk", "Linux", "Flatpak"],
-    description:
-      "Lipi is for installing and managing fonts from Google Fonts repo contaning thousands of fonts.",
-    sourceHref: "https://github.com/shonebinu/Lipi",
-    liveHref: "https://flathub.org/en/apps/io.github.shonebinu.Glyph",
-  },
-  {
-    logoImage: DefuseImage,
-    title: "Defuse",
-    techs: ["Python", "Gtk", "Linux", "Flatpak"],
-    description:
-      "Defuse lets you remove image backgrounds locally. Processing is performed using the ISNet-general model through ONNX Runtime.",
-    sourceHref: "https://github.com/shonebinu/Defuse",
-    liveHref: "https://flathub.org/en/apps/io.github.shonebinu.Defuse",
-  },
-  {
-    logoImage: ExchangeImage,
-    title: "Exchange",
-    techs: ["Python", "Gtk", "Linux", "Flatpak"],
-    description:
-      "Exchange does conversion between the XML and Blueprint GTK UI definition formats. It uses blueprint-compiler under the hood.",
-    sourceHref: "https://github.com/shonebinu/Exchange",
-    liveHref: "https://flathub.org/en/apps/io.github.shonebinu.Exchange",
-  },
+  // Puedes dejar los proyectos de ejemplo o reemplazarlos por los tuyos siguiendo esta estructura
   {
     logoImage: PlaceholderImage,
-    title: "Zed React Snippets",
-    techs: ["Javascript"],
+    title: "Proyecto CRM COEM",
+    techs: ["CRM", "Modelado de Procesos", "Historias de Usuario"],
     description:
-      "Zed extension with converted React/Redux/React-Native snippets from the popular 'ES7+ React/Redux/React-Native snippets' VSCode extension. ",
-    sourceHref: "https://github.com/shonebinu/zed-react-snippets",
-    liveHref: "https://zed.dev/extensions/react-snippets-es7",
-  },
-  {
-    logoImage: PenweaveImage,
-    title: "Penweave",
-    techs: ["React", "Supabase", "daisyUI"],
-    description:
-      "Penweave is a CodePen‑like tool that lets users run their HTML/CSS/JS in a browser environment with secure preview and sharing.",
-    sourceHref: "https://github.com/shonebinu/penweave/",
-    liveHref: "https://penweave.pages.dev",
-  },
-  {
-    logoImage: MGUScraperImage,
-    title: "MGU Scraper",
-    techs: ["Python", "Streamlit", "Beautiful Soup"],
-    description:
-      "MGU Scraper is a tool designed to simplify the extraction and analysis of bulk student exam results from MGU Kottayam University.",
-    sourceHref: "https://github.com/shonebinu/MGUScraper",
-    liveHref: "https://mguscraper.streamlit.app/",
-  },
-  {
-    logoImage: FlashifyImage,
-    title: "Flashify",
-    techs: ["PHP", "MySQL", "LAMP"],
-    description:
-      "Flashify is a minimal, beautiful, and responsive web-based flashcard application built using the LAMP stack.",
-    sourceHref: "https://github.com/shonebinu/flashify",
-    liveHref: "https://flashify.shonebinu.com/",
-  },
-  {
-    logoImage: WeatherifyImage,
-    title: "Weatherify",
-    techs: ["Javascript", "Webpack"],
-    description:
-      "Weather app featuring glassmorphism design, powered by weatherapi.com.",
-    sourceHref: "https://github.com/shonebinu/weatherify",
-    liveHref: "https://shonebinu.github.io/weatherify/",
+      "Trabajo actual en levantamiento de requerimientos y especificaciones técnicas para optimización del sistema CRM.",
+    sourceHref: "#",
+    liveHref: "#",
   },
 ];
 
