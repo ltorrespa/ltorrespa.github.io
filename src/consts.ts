@@ -62,7 +62,7 @@ export const about: About = {
     { icon: "Youtube", href: "https://www.youtube.com/@camilatorres1004" }, 
   ],
   resumeHref:
-    "#", // Coloca aquí el link a tu hoja de vida
+    "#", // "C:\Users\laura\Downloads\Hoja De Vida Laura Camila Torres Padilla.pdf"
   workExperience: [
     {
       title: "Analista de Requerimientos",
