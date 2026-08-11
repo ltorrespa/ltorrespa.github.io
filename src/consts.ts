@@ -88,12 +88,26 @@ export const about: About = {
   ],
   education: [
     {
-      title: "Ingeniería de Sistemas",
-      timeline: "5.° Semestre",
-      institution: "Universidad el Bosque • Colombia",
+      title: "Estudiante V Semestre de Ingeniería de Sistemas",
+      timeline: "2023 - Presente",
+      institution: "Universidad El Bosque • Bogotá D.C.",
       description:
-        "Formación académica centrada en modelado de procesos, gestión de requisitos y fundamentos de ingeniería de software.",
+        "Formación académica en ingeniería de sistemas, enfocada en el desarrollo, análisis de requerimientos y modelado de procesos.",
     },
+    {
+      title: "Capacítarte para el Trabajo - Testing",
+      timeline: "2022",
+      institution: "Fundación Carlos Slim • Bogotá D.C.",
+      description:
+        "Programa de capacitación especializada en pruebas y control de calidad de software (Testing).",
+    },
+    {
+      title: "Bachiller Académico",
+      timeline: "2019",
+      institution: "Colegio de las R.R. Esclavas del Sagrado Corazón de Jesús • Bogotá D.C.",
+      description:
+        "Educación secundaria y obtención del título de Bachiller Académico.",
+    },,
   ],
   // parses html
   getInTouch:
