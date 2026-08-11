@@ -51,7 +51,7 @@ export const about: About = {
   headLine:
     "Hola, Soy <span class='fancy-highlight font-black'>Laura Camila Torres</span>",
   tagLine: "Analista de Requerimientos / Estudiante de Ingeniería de Sistemas",
-  profilePic: ProfilePic,
+ profilePic: "/profile-pic.jpg",
   // parses html
   description:
     "Estudiante de 5.° semestre de <u>Ingeniería de Sistemas</u> y apasionada por transformar necesidades de negocio en soluciones claras. Actualmente me desempeño como <u>Analista de Requerimientos</u>, enfocada en el levantamiento, análisis y modelado de procesos, además de trabajar con especificaciones técnicas e historias de usuario para CRM COEM. Fuera del ámbito académico, busco constantemente aprender y mejorar en áreas que potencien mi perfil integral con el fin de aplicar el conocimiento en el ámbito laboral y crecer profesionalmente.",
