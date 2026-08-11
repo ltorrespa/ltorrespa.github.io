@@ -66,10 +66,24 @@ export const about: About = {
   workExperience: [
     {
       title: "Analista de Requerimientos",
-      timeline: "Actualidad",
-      company: "CRM COEM • Colombia",
+      timeline: "2025 - Presente",
+      company: "Controles Empresariales • Colombia",
       description:
-        "Levantamiento, análisis y modelado de procesos, gestión de historias de usuario y especificaciones técnicas para CRM.",
+        "Actualmente me desempeño como Analista de Requerimientos en el equipo de Mercadeo, liderando la gestión de solicitudes internas, optimizando flujos de trabajo y asegurando la calidad en cada entrega.",
+    },
+    {
+      title: "Analista de Requerimientos",
+      timeline: "2023 - 2025",
+      company: "Periferia IT Group • Colombia",
+      description:
+        "Desempeñé el rol durante 2 años y 7 meses, asignada a diferentes proyectos de la Fábrica de Desarrollo tanto a nivel interno como externo.",
+    },
+    {
+      title: "Tester Q.A",
+      timeline: "2022 - 2023",
+      company: "Experis Manpower Group Colombia / DXC • Colombia",
+      description:
+        "Ejecución de pruebas de desarrollo y calidad para los respectivos aplicativos del Banco de Davivienda de Colombia.",
     },
   ],
   education: [
