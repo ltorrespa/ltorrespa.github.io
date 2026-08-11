@@ -107,7 +107,7 @@ export const about: About = {
       institution: "Colegio de las R.R. Esclavas del Sagrado Corazón de Jesús • Bogotá D.C.",
       description:
         "Educación secundaria y obtención del título de Bachiller Académico.",
-    },,
+    },
   ],
  
   getInTouch:
