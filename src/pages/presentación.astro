@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { meta } from "../consts";
+import ProfilePic from "src\assets\profile-pic.jpg";
+
+<Layout title="Presentación | Laura Camila Torres" description="Mi video de presentación profesional">
+  <main class="max-w-3xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold mb-6">Presentación</h1>
+    
+    <div class="space-y-6">
+      <p class="text-lg">
+        ¡Hola! Te doy la bienvenida a mi espacio de presentación profesional. Aquí puedes conocerme un poco más y ver mi video de introducción.
+      </p>
+
+      <!-- Contenedor de la foto -->
+      <div class="flex justify-center my-6">
+        <div class="w-48 h-48 rounded-full overflow-hidden border-2 border-primary">
+          <Image src={ProfilePic} alt="Laura Camila Torres" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Enlace o inserción del video -->
+      <div class="bg-card p-6 rounded-lg shadow-sm border border-border text-center space-y-4">
+        <h2 class="text-xl font-semibold">Video de Introducción</h2>
+        <p class="text-sm opacity-80">Haz clic en el siguiente enlace para ver mi video de presentación:</p>
+        
+        <a 
+          href="AQUÍ_VA_EL_ENLACE_DE_TU_VIDEO" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-block bg-primary text-white px-6 py-2 rounded-md font-medium hover:opacity-90 transition"
+        >
+          Ver Video en YouTube / Drive
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
