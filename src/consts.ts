@@ -109,13 +109,13 @@ export const about: About = {
         "Educación secundaria y obtención del título de Bachiller Académico.",
     },,
   ],
-  // parses html
+ 
   getInTouch:
-    "Si deseas contactarme, escríbeme a <a href='mailto:tu-correo@ejemplo.com' class='primary-underline'>tu-correo@ejemplo.com</a> o conectemos a través de mis redes sociales.",
+    "Si deseas contactarme, escríbeme a <a href='mailto:ltorrespa@unbosque.edu.co' class='primary-underline'>tu-correo@ejemplo.com</a> o conectemos a través de mis redes sociales.",
 };
 
 export const projects: Project[] = [
-  // Puedes dejar los proyectos de ejemplo o reemplazarlos por los tuyos siguiendo esta estructura
+  
   {
     logoImage: PlaceholderImage,
     title: "Proyecto CRM COEM",
@@ -127,4 +127,3 @@ export const projects: Project[] = [
   },
 ];
 
-// add blog articles in /src/content/blog
