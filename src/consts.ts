@@ -58,8 +58,8 @@ export const about: About = {
   links: [
     // Lucide icons
     { icon: "Github", href: "https://github.com/LauraCamT/" },
-    { icon: "Linkedin", href: "https://www.linkedin.com/" }, // Actualiza con tu URL
-    { icon: "Youtube", href: "https://www.youtube.com/" }, // Actualiza con tu URL
+    { icon: "Linkedin", href: "https://www.linkedin.com/in/camilatorres07/" }, 
+    { icon: "Youtube", href: "https://www.youtube.com/@camilatorres1004" }, 
   ],
   resumeHref:
     "#", // Coloca aquí el link a tu hoja de vida
