@@ -95,13 +95,6 @@ export const about: About = {
         "Formación académica en ingeniería de sistemas, enfocada en el desarrollo, análisis de requerimientos y modelado de procesos.",
     },
     {
-      title: "Capacítarte para el Trabajo - Testing",
-      timeline: "2022",
-      institution: "Fundación Carlos Slim • Bogotá D.C.",
-      description:
-        "Programa de capacitación especializada en pruebas y control de calidad de software (Testing).",
-    },
-    {
       title: "Bachiller Académico",
       timeline: "2019",
       institution: "Colegio de las R.R. Esclavas del Sagrado Corazón de Jesús • Bogotá D.C.",
