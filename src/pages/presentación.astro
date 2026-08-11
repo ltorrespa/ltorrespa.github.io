@@ -1,5 +1,5 @@
 ---
-import { meta } from "../consts";
+import { meta, about, experience } from "../consts";
 ---
 
 <html lang="es">
@@ -14,53 +14,46 @@ import { meta } from "../consts";
       
       <!-- Foto de perfil -->
       <div class="w-36 h-36 rounded-full overflow-hidden border-4 border-indigo-500 mb-6 shadow-lg shadow-indigo-500/20">
-        <img src="/profile-pic.jpg" alt="Laura Camila Torres Padilla" class="w-full h-full object-cover" />
+        <img src={about.profilePic} alt="Laura Camila Torres Padilla" class="w-full h-full object-cover" />
       </div>
 
       <!-- Nombre y Rol Principal -->
       <h1 class="text-3xl font-extrabold tracking-tight mb-2">Laura Camila Torres Padilla</h1>
       <p class="text-indigo-400 font-medium text-base mb-4">
-        Estudiante V Semestre de Ingeniería de Sistemas • Analista de Requerimientos
+        {about.tagLine}
       </p>
 
       <!-- Descripción corta -->
-      <p class="text-slate-300 text-sm leading-relaxed mb-8 max-w-lg">
-        Apasionada por el desarrollo de software, el análisis de requerimientos y el modelado de procesos. Actualmente liderando la gestión de solicitudes y optimización de flujos de trabajo.
-      </p>
+      <p class="text-slate-300 text-sm leading-relaxed mb-8 max-w-lg" set:html={about.description} />
 
-      <!-- Sección de Experiencia Resumida -->
-      <div class="w-full text-left mb-6">
+      <!-- Sección de Experiencia Profesional -->
+      <div class="w-full text-left mb-8">
         <h2 class="text-lg font-semibold text-white border-b border-slate-800 pb-2 mb-4">Experiencia Profesional</h2>
         
         <div class="space-y-4 text-sm">
-          <div>
-            <div class="flex justify-between font-medium text-slate-200">
-              <span>Analista de Requerimientos</span>
-              <span class="text-xs text-indigo-400 font-normal">2025 - Presente</span>
+          {experience.map((item) => (
+            <div>
+              <div class="flex justify-between font-medium text-slate-200">
+                <span>{item.role}</span>
+                <span class="text-xs text-indigo-400 font-normal">{item.period}</span>
+              </div>
+              <p class="text-slate-400 text-xs">{item.company} • {item.location}</p>
             </div>
-            <p class="text-slate-400 text-xs">Controles Empresariales • Colombia</p>
-          </div>
-
-          <div>
-            <div class="flex justify-between font-medium text-slate-200">
-              <span>Analista de Requerimientos</span>
-              <span class="text-xs text-indigo-400 font-normal">2023 - 2025</span>
-            </div>
-            <p class="text-slate-400 text-xs">Periferia IT Group • Colombia</p>
-          </div>
-
-          <div>
-            <div class="flex justify-between font-medium text-slate-200">
-              <span>Tester Q.A</span>
-              <span class="text-xs text-indigo-400 font-normal">2022 - 2023</span>
-            </div>
-            <p class="text-slate-400 text-xs">Experis Manpower Group / DXC • Colombia</p>
-          </div>
+          ))}
         </div>
       </div>
 
+      <!-- Enlaces a redes -->
+      <div class="flex gap-4 mb-6">
+        {about.links.map((link) => (
+          <a href={link.href} target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-indigo-400 text-sm font-medium transition-colors">
+            {link.icon}
+          </a>
+        ))}
+      </div>
+
       <!-- Botón de navegación -->
-      <div class="mt-4">
+      <div>
         <a href="/" class="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm rounded-xl transition-all shadow-lg shadow-indigo-600/30">
           Volver al Inicio
         </a>
